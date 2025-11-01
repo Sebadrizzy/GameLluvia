@@ -1,33 +1,43 @@
-# GameLluvia2024
+# 🎮 Proyecto GameLluvia (LibGDX)
 
-A [libGDX](https://libgdx.com/) project generated with [gdx-liftoff](https://github.com/libgdx/gdx-liftoff).
+Este es un sencillo juego 2D desarrollado en Java con el framework LibGDX. El proyecto es una versión modificada y ampliada del tutorial "Drop" de LibGDX, creado como parte de un avance de proyecto académico.
 
-This project was generated with a template including simple application launchers and an `ApplicationAdapter` extension that draws libGDX logo.
+## 🕹️ Descripción del Juego
 
-## Platforms
+El jugador controla un tarro en la parte inferior de la pantalla. El objetivo es recolectar la mayor cantidad de **gotas buenas** (transparentes) para sumar puntos, mientras se esquivan las **gotas malas** (rojas) que restan vidas.
 
-- `core`: Main module with the application logic shared by all platforms.
-- `lwjgl3`: Primary desktop platform using LWJGL3; was called 'desktop' in older docs.
+El juego termina cuando el jugador pierde sus 3 vidas.
 
-## Gradle
+## 🛠️ Tecnologías Utilizadas
 
-This project uses [Gradle](https://gradle.org/) to manage dependencies.
-The Gradle wrapper was included, so you can run Gradle tasks using `gradlew.bat` or `./gradlew` commands.
-Useful Gradle tasks and flags:
+* **Lenguaje:** Java
+* **Framework:** LibGDX
+* **Build Tool:** Gradle
 
-- `--continue`: when using this flag, errors will not stop the tasks from running.
-- `--daemon`: thanks to this flag, Gradle daemon will be used to run chosen tasks.
-- `--offline`: when using this flag, cached dependency archives will be used.
-- `--refresh-dependencies`: this flag forces validation of all dependencies. Useful for snapshot versions.
-- `build`: builds sources and archives of every project.
-- `cleanEclipse`: removes Eclipse project data.
-- `cleanIdea`: removes IntelliJ project data.
-- `clean`: removes `build` folders, which store compiled classes and built archives.
-- `eclipse`: generates Eclipse project data.
-- `idea`: generates IntelliJ project data.
-- `lwjgl3:jar`: builds application's runnable jar, which can be found at `lwjgl3/build/libs`.
-- `lwjgl3:run`: starts the application.
-- `test`: runs unit tests (if any).
+## 📋 Prerrequisitos
 
-Note that most tasks that are not specific to a single project can be run with `name:` prefix, where the `name` should be replaced with the ID of a specific project.
-For example, `core:clean` removes `build` folder only from the `core` project.
+Para poder compilar y ejecutar este proyecto, necesitarás:
+
+* Java Development Kit (JDK), versión 11 o superior.
+* Git (para clonar el repositorio).
+
+## 🖥️ Cómo Ejecutar (Desde Eclipse IDE)
+
+Si deseas ejecutar el proyecto desde el IDE de Eclipse:
+
+1.  Clona el repositorio en tu máquina.
+2.  Abre Eclipse.
+3.  Ve a `File` > `Import...`.
+4.  Selecciona `Gradle` > `Existing Gradle Project` y haz clic en `Next`.
+5.  En `Project root directory`, selecciona la carpeta del proyecto que clonaste.
+6.  Haz clic en `Finish` y espera a que Eclipse (y Gradle) configuren el proyecto.
+7.  En el explorador de paquetes (Package Explorer), navega hasta el módulo `desktop`.
+8.  Encuentra la clase `DesktopLauncher.java` (debería estar en `desktop/src/main/java/puppy/code/`).
+9.  Haz clic derecho en `DesktopLauncher.java` y selecciona `Run As` > `Java Application`.
+
+---
+
+## ⌨️ Controles
+
+* **Flecha Izquierda:** Mover el tarro a la izquierda.
+* **Flecha Derecha:** Mover el tarro a la derecha.
