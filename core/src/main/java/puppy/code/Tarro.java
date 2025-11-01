@@ -8,8 +8,7 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.math.Rectangle;
 
-
-public class Tarro {
+public class Tarro implements IDibujable {
 	   private Rectangle bucket;
 	   private Texture bucketImage;
 	   private Sound sonidoHerido;
@@ -54,6 +53,8 @@ public class Tarro {
 		  tiempoHerido=tiempoHeridoMax;
 		  sonidoHerido.play();
 	   }
+	   
+       @Override 
 	   public void dibujar(SpriteBatch batch) {
 		 if (!herido)  
 		   batch.draw(bucketImage, bucket.x, bucket.y);
@@ -67,13 +68,6 @@ public class Tarro {
 	   
 	   
 	   public void actualizarMovimiento() { 
-		   // movimiento desde mouse/touch
-		   /*if(Gdx.input.isTouched()) {
-			      Vector3 touchPos = new Vector3();
-			      touchPos.set(Gdx.input.getX(), Gdx.input.getY(), 0);
-			      camera.unproject(touchPos);
-			      bucket.x = touchPos.x - 64 / 2;
-			}*/
 		   //movimiento desde teclado
 		   if(Gdx.input.isKeyPressed(Input.Keys.LEFT)) bucket.x -= velx * Gdx.graphics.getDeltaTime();
 		   if(Gdx.input.isKeyPressed(Input.Keys.RIGHT)) bucket.x += velx * Gdx.graphics.getDeltaTime();
