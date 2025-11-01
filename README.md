@@ -21,21 +21,36 @@ Para poder compilar y ejecutar este proyecto, necesitarás:
 * Java Development Kit (JDK), versión 11 o superior.
 * Git (para clonar el repositorio).
 
-## 🖥️ Cómo Ejecutar (Desde Eclipse IDE)
+Instrucciones rápidas para ejecutar el juego desde la línea de comandos.
 
-Si deseas ejecutar el proyecto desde el IDE de Eclipse:
+-Clona el repositorio: git clone https://github.com/Sebadrizzy/GameLluvia
 
-1.  Clona el repositorio en tu máquina.
-2.  Abre Eclipse.
-3.  Ve a `File` > `Import...`.
-4.  Selecciona `Gradle` > `Existing Gradle Project` y haz clic en `Next`.
-5.  En `Project root directory`, selecciona la carpeta del proyecto que clonaste.
-6.  Haz clic en `Finish` y espera a que Eclipse (y Gradle) configuren el proyecto.
-7.  En el explorador de paquetes (Package Explorer), navega hasta el módulo `desktop`.
-8.  Encuentra la clase `DesktopLauncher.java` (debería estar en `desktop/src/main/java/puppy/code/`).
-9.  Haz clic derecho en `DesktopLauncher.java` y selecciona `Run As` > `Java Application`.
+## 🚀 Cómo Ejecutar (Para Windows)
+
+1.  Abre una terminal (CMD o PowerShell).
+
+2.  Navega hasta la carpeta donde tienes el proyecto.
+    ```bash
+    cd [ruta-donde-esta-el-juego]
+    ```
+    *(Por ejemplo: `cd C:\Users\TuNombre\Desktop\GameLluvia2024`)*
+
+3.  Una vez dentro de la carpeta, ejecuta el siguiente comando para iniciar el juego:
+    ```bash
+    gradlew.bat lwjgl3:run
+    ```
+
+El juego compilará (la primera vez puede tardar un poco) y se ejecutará en una nueva ventana.
 
 ---
+
+## 🍏 (Opcional) Para macOS / Linux
+
+Si usas macOS o Linux, los comandos son los mismos, pero cambia el archivo `.bat` por `./gradlew`:
+
+bash
+cd [ruta-donde-esta-el-juego]
+./gradlew lwjgl3:run
 
 ## ⌨️ Controles
 
